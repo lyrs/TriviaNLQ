@@ -1,0 +1,3 @@
+[submodule "sparqling-queries"]
+	path = sparqling-queries
+	url = https://github.com/lyrs/sparqling-queries.git
