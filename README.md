@@ -1,10 +1,10 @@
-# LingNLQ project
+# Trivia project
 
-The current repository contains the data, code and results of the LingNLQ project.
+The current repository contains the data, code and results of the TriviaNLQ project.
 It was realised by Karolin Boczoń, Dimitra Niaouri, Roham Roshanfekr and Muhammad Shahzaib for the 2022-2023 Software Project (UE905 EC1) at IDMC (Nancy), under the supervision of Miguel Couceiro and Esteban Marquer.
 
 ## Abstract
-The LingNLQ is TBD.
+The TriviaNLQ is TBD.
 
 ## Content
 - [Install instructions](#install-instructions)
@@ -23,12 +23,18 @@ To setup the project, you have to:
 
 
 ### Dataset
-To download the dataset, do as follows....
+The dataset we use is called [TriviaQA](https://nlp.cs.washington.edu/triviaqa/).
+
+```
+mkdir data
+curl "https://nlp.cs.washington.edu/triviaqa/data/triviaqa-unfiltered.tar.gz" | tar -xzv -C data/
+```
+
 
 ## Usage instructions
 ### Basic usage
 
-### Reproduce the experiments mentionned in the report
+### Reproduce the experiments mentioned in the report
 
 
 ## Repository structure
