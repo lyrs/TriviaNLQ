@@ -20,16 +20,44 @@ To setup the project, you have to:
 3. [download the datasets](#).
 
 ### Python dependencies
-
+First install Pytorch:
+ <code> pip install torch </code>
+ Then install fairseq :
+ <code> pip install fairseq </code>
+ 
 
 ### Dataset
 To download the dataset, do as follows....
+dowload the dataset from the following link:
+
+https://drive.google.com/file/d/1ZNTZnE-rmH7OTuRTCqPR18wKTPGD3PQO/view?usp=sharing
+
+then save it in a directory e.g. data/LC-QUAD
+
+The original link to LC-QUAD v1 is accessable in the link below:
+
+http://lc-quad.sda.tech/lcquad1.0.html
+
+
 
 ## Usage instructions
 ### Basic usage
-
 ### Reproduce the experiments mentionned in the report
+download the checkpoint of the trained model ConvS2S from the following link: 
 
+https://drive.google.com/file/d/1wirMkFL_rKcjMcAJoa75EkZkq8P49TW9/view?usp=sharing
+
+and save it in a directory e.g. models/
+then run the fairseq-generate command :
+
+DDIR=data/LC-QUAD
+MDIR=models
+RDIR=results/ConvS2S
+
+fairseq-generate $DDIR/fairseq-data-bin \
+--gen-subset test \
+--path $MDIR/checkpoint_best.pt \
+--beam 5 > $RDIR/test_output.txt
 
 ## Repository structure
 - [`README-example.md`](/README-example.md): this file.
