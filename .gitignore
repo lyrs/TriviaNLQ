@@ -1,0 +1,4 @@
+trivialenv/
+.ipynb_checkpoints
+
+data/*
