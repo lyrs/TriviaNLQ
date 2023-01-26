@@ -13,3 +13,6 @@
 [submodule "explored_models/WineOntology"]
 	path = explored_models/WineOntology
 	url = https://github.com/ThirasaraAriyarathna/WineOntology
+[submodule "explored_models/sparqling-queries"]
+	path = explored_models/sparqling-queries
+	url = https://github.com/yandex-research/sparqling-queries
