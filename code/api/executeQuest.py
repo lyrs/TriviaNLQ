@@ -12,9 +12,7 @@ import subprocess
 import os
 
 
-while(1):
-    # Ask user for input
-    question = input('write question:')
+def predict_sparql(question):
     with open("source.txt", "w") as text_file:
         # Write the input to a file
         text_file.write("%s" % question)
