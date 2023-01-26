@@ -7,3 +7,6 @@
 [submodule "explored_models/t5_text_to_sparql"]
 	path = explored_models/t5_text_to_sparql
 	url = https://github.com/yazdipour/text-to-sparql
+[submodule "explored_models/MK-SQuIT"]
+	path = explored_models/MK-SQuIT
+	url = https://github.com/MeetKai/MK-SQuIT
