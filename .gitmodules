@@ -1,3 +1,6 @@
 [submodule "code/tested_tntspa"]
 	path = code/tested_tntspa
 	url = https://github.com/xiaoyuin/tntspa
+[submodule "explored_models/tntspa"]
+	path = explored_models/tntspa
+	url = https://github.com/xiaoyuin/tntspa
