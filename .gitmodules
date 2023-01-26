@@ -10,3 +10,6 @@
 [submodule "explored_models/MK-SQuIT"]
 	path = explored_models/MK-SQuIT
 	url = https://github.com/MeetKai/MK-SQuIT
+[submodule "explored_models/WineOntology"]
+	path = explored_models/WineOntology
+	url = https://github.com/ThirasaraAriyarathna/WineOntology
