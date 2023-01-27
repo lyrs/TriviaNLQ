@@ -27,7 +27,11 @@ const SearchPage = (props) => {
       method: "POST",
       mode: "cors",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ searchText: searchText }),
+      body: JSON.stringify({
+        searchText: searchText
+          .toLowerCase()
+          .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, ""),
+      }),
     };
     try {
       var response = await fetch("http://127.0.0.1:5000", requestOptions);
