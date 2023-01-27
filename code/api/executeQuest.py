@@ -9,7 +9,7 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 import generator_utils as utils
 import subprocess
-import os
+import sys  
 
 
 def predict_sparql(question):
@@ -18,31 +18,31 @@ def predict_sparql(question):
         text_file.write("%s" % question)
 
     # Define the command to run the machine learning model
-    bashCommand = "fairseq-interactive  --path output/models/checkpoint_best.pt  output/models --beam 5 --source-lang en --target-lang sparql     --tokenizer moses  --input=source.txt"
+    bashCommand = "fairseq-interactive  --path output/models/checkpoint_best.pt  data/monument_600/fairseq-data-bin --beam 5 --source-lang en --target-lang sparql     --tokenizer moses  --input=source.txt"
     # Run command line process to run the input through the model
     process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
     # Decode the output and split it into lines
     output, error = process.communicate()
     outputs = output.decode("utf-8").split('\n')
-    # Clear the console
-    # os.system('clear')
-    # Print the question
-    print(question)
-    # Print the output from the model
-    print(outputs[0 ])
     # Extract the SPARQL query from the output
     query = outputs[2].split('	')[2]
-    query = query.replace('<', '').replace('>', '')
     query = utils.decode(query)
-    print(query)
+    # query = query.replace('<', '').replace('>', '')
     # Send the SPARQL query to DBpedia
-    sparql = SPARQLWrapper("http://dbpedia.org/sparql")
-    sparql.setReturnFormat(JSON)
+    try:
+        results = None
+        error = None
+        sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+        sparql.setReturnFormat(JSON)
 
-    sparql.setQuery(query)  # the previous query as a literal string
-    results = sparql.query().convert()
+        sparql.setQuery(query)  # the previous query as a literal string
+        results = sparql.query().convert()
+    except Exception as e:
+        print('Failed Error: '+ str(e))
+        error=  str(e)
     # Print the results
-    if results["results"]:
-        print(results["results"])
-    else:
-        print(results)
+    return {"questionEncoding": outputs[0],
+            "queryEncoding": outputs[2].split('	')[2],
+            "sparql": query,
+            "dbpediaResult": results,
+            "error": error}

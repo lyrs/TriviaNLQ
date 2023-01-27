@@ -7,7 +7,7 @@
 
 ## libraries
 from SPARQLWrapper import SPARQLWrapper, JSON
-import generator_utils as utils
+import api.generator_utils as utils
 import subprocess
 import os
 
@@ -20,7 +20,7 @@ while(1):
         text_file.write("%s" % question)
 
     # Define the command to run the machine learning model
-    bashCommand = "fairseq-interactive  --path output/models/checkpoint_best.pt  output/models --beam 5 --source-lang en --target-lang sparql     --tokenizer moses  --input=source.txt"
+    bashCommand = "fairseq-interactive  --path output/models/checkpoint_best.pt  data/monument_600/fairseq-data-bin --beam 5 --source-lang en --target-lang sparql     --tokenizer moses  --input=source.txt"
     # Run command line process to run the input through the model
     process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
     # Decode the output and split it into lines
