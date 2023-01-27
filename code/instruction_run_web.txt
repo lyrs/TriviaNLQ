@@ -1,0 +1,14 @@
+flask dependences:
+pip install SPARQLWrapper
+pip install Flask
+pip install flask_cors
+
+to run flask api from code folder (dependences must be installed)
+flask --app api/index run
+
+
+
+to run react app
+run the following command in code/front-end
+npm install                                 -- to install node packages (only once)
+npm start                                   -- to start the app
