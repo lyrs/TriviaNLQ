@@ -19,7 +19,7 @@ trans = TransformerModel.from_pretrained(
   is_gpu=True
 ).cuda()
 
-def predict_sparqltemp_sparql(question): 
+def predict_sparql(question): 
     queryEnc = trans.translate(question)
     query = utils.decode(queryEnc)
 
