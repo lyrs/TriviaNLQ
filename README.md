@@ -4,7 +4,7 @@ The current repository contains the data, code and results of the LingNLQ projec
 It was realised by Karolin Boczoń, Dimitra Niaouri, Roham Roshanfekr and Muhammad Shahzaib for the 2022-2023 Software Project (UE905 EC1) at IDMC (Nancy), under the supervision of Miguel Couceiro and Esteban Marquer.
 
 ## Abstract
-The LingNLQ is TBD.
+This project introduces TriviaNLQ, a web-application that utilizes text-to-SPARQL modeling to query the DBpedia knowledge graph and answer trivia questions. It also acts as a survey on available text-to-SPRARQL models. For building our application we trained a Convolutional Sequence-to-Sequence model (CNN architecture) based on a Neural Machine Translation(NMT) approach using Facebook's Fairseq toolkit. The datasets that we used are LC-QUAD and Monument datasets. Our results suggest a better performance of the model when using the Monument dataset, having a BLEU score of 97.6 on the validation set and 97.3 on the test set.
 
 ## Content
 - [Install instructions](#install-instructions)
