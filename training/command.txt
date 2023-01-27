@@ -1,0 +1,9 @@
+dependencies:
+sudo apt install nvidia-cuda-toolkit
+
+prepare dataset
+sh build_dataset.sh $DATA_DIRECTORY $DATA_PREFIX
+
+
+prepare data for fairseq
+fairseq-preprocess -s en -t sparql --trainpref data/monument_600/train --validpref data/monument_600/dev --testpref data/monument_600/test --destdir data/monument_600/fairseq-data-bin --joined-dictionary
