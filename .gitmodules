@@ -1,0 +1,18 @@
+[submodule "code/tested_tntspa"]
+	path = code/tested_tntspa
+	url = https://github.com/xiaoyuin/tntspa
+[submodule "explored_models/tntspa"]
+	path = explored_models/tntspa
+	url = https://github.com/xiaoyuin/tntspa
+[submodule "explored_models/t5_text_to_sparql"]
+	path = explored_models/t5_text_to_sparql
+	url = https://github.com/yazdipour/text-to-sparql
+[submodule "explored_models/MK-SQuIT"]
+	path = explored_models/MK-SQuIT
+	url = https://github.com/MeetKai/MK-SQuIT
+[submodule "explored_models/WineOntology"]
+	path = explored_models/WineOntology
+	url = https://github.com/ThirasaraAriyarathna/WineOntology
+[submodule "explored_models/sparqling-queries"]
+	path = explored_models/sparqling-queries
+	url = https://github.com/yandex-research/sparqling-queries
