@@ -61,12 +61,10 @@ then select test_fairsec option. the result will be in the corresponding folder.
 ## Repository structure
 - [`README-example.md`](/README-example.md): this file.
 - [`main.py`](/main.py): Python script for training the models.
-- [`experiment1.py`](/experiment1.py): Python script to run the experiment on the synthetic data, mentionned in section 4.2. of the report.
-- [`experiment2.py`](/experiment2.py): Python script to run the experiment on the real-world data from ..., mentionned in section 4.4. of the report.
 - [`report/`](/report/): folder for project report PDF.
 - [`presentations/`](/presentations/): folder containing all the intermediate presentations as PDF. 
 - [`results/`](/results/): folder containing all the results generated during the project.
-    - [`results/models/`](/results/models/): folder containing the models trained during the project.
-    - [`results/plots/`](/results/plots/): folder containing the plots describing the performance and the experiments.
-    - [`results/solutions/`](/results/solutions/): folder containing the solutions to the Ultimate Question of Life, The Universe, and Everything.
+    - [`results/Monument/`](/results/Monument/): folder containing the results of the model trained on the Monument dataset during this project.
+    - [`results/LC-QUAD/`](/results/Monument/): folder containing the results of the model trained on the LC-QUAD dataset during this project.
+- [`training/`](/training/):folder containg the scripts to train the models and get the results.
 - [`articles/`](/articles/): folder containing all the articles read or mentioned in the report, as PDFs. Each file is labled using the template `[article topic]-[publication year]-[authors' last names].pdf`; if more than 3 authors are present, `[authors' last names]` is replaced by `[first author's last name]-et-al` instead.
