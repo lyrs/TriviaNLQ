@@ -26,24 +26,35 @@ To setup the project, you have to:
  
 
 ### Dataset
-- Download the dataset from the following link:
+- Download a dataset from the following link(s):
 
     [Monument dataset](https://drive.google.com/file/d/1ZNTZnE-rmH7OTuRTCqPR18wKTPGD3PQO/view?usp=sharing)
+  <br />   [LC-QUAD dataset](https://drive.google.com/file/d/1ZNTZnE-rmH7OTuRTCqPR18wKTPGD3PQO/view?usp=sharing)
 
-- Save it in the directory:
+- Save it in a directory:
     <br /> <code>data/monument_600 </code>
+    <br /> <code>data/LC-QUAD </code>
 
 
 ## Usage instructions
 ### Basic usage
 ### Reproduce the experiments mentionned in the report
-- Download the checkpoint of the trained model ConvS2S from the following link: 
+- Download a checkpoint of the trained model ConvS2S from the following link: 
 
-   [Checkpoint for ConvS2S](https://drive.google.com/file/d/1wirMkFL_rKcjMcAJoa75EkZkq8P49TW9/view?usp=sharing)
+   [ConvS2S model Checkpoint trained on Monument dataset ](https://drive.google.com/file/d/1wirMkFL_rKcjMcAJoa75EkZkq8P49TW9/view?usp=sharing)
+<br />   [ConvS2S model Checkpoint trained on LC-QUAD dataset ](https://drive.google.com/file/d/1wirMkFL_rKcjMcAJoa75EkZkq8P49TW9/view?usp=sharing)
 
-- Save it in the directory output/models/
-- Run:
+- Save it in the directory <code>output/models/</code> with the name <code>checkpoint_best.pt</code>
+- For having an experience on asking a question(in NL) and seeing the query(in SPARQL):
 <br /> <code> python3 code/main.py </code>
+- For evaluating the model over test portion (and dev poertion) of dataset, run:
+<br /> <code> python3 training/test.py $DDIR $MDIR $RDIR</code>
+The arguments are data nad model and results folder respectivly. default values can be:
+<code>DDIR = data/monuments_600</code>
+<code>MDIR = output/models</code>
+<code>RDIR = results/result</code>
+<br />
+then select test_fairsec option. the result will be in the corresponding folder.
 
 
 ## Repository structure
