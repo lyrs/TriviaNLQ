@@ -28,8 +28,8 @@ To setup the project, you have to:
 ### Dataset
 - Download a dataset from the following link(s):
 
-    [Monument dataset](https://drive.google.com/file/d/1ZNTZnE-rmH7OTuRTCqPR18wKTPGD3PQO/view?usp=sharing)
-  <br />   [LC-QUAD dataset](https://drive.google.com/file/d/1ZNTZnE-rmH7OTuRTCqPR18wKTPGD3PQO/view?usp=sharing)
+  <br /> [Monument dataset](https://drive.google.com/file/d/15wo0HuLbAOkGgdY7zbwqppzfgiWeity9/view?usp=share_link)
+  <br /> [LC-QUAD dataset](https://drive.google.com/file/d/1ZNTZnE-rmH7OTuRTCqPR18wKTPGD3PQO/view?usp=sharing)
 
 - Save it in a directory:
     <br /> <code>data/monument_600 </code>
@@ -41,15 +41,16 @@ To setup the project, you have to:
 ### Reproduce the experiments mentionned in the report
 - Download a checkpoint of the trained model ConvS2S from the following link: 
 
-   [ConvS2S model Checkpoint trained on Monument dataset ](https://drive.google.com/file/d/1wirMkFL_rKcjMcAJoa75EkZkq8P49TW9/view?usp=sharing)
+   [ConvS2S model Checkpoint trained on Monument dataset ](https://drive.google.com/file/d/137_GiF1RlTDidF8psj7yg48soGzamV1N/view?usp=share_link)
 <br />   [ConvS2S model Checkpoint trained on LC-QUAD dataset ](https://drive.google.com/file/d/1wirMkFL_rKcjMcAJoa75EkZkq8P49TW9/view?usp=sharing)
+
 
 - Save it in the directory <code>output/models/</code> with the name <code>checkpoint_best.pt</code>
 - For having an experience on asking a question(in NL) and seeing the query(in SPARQL):
 <br /> <code> python3 code/main.py </code>
 - For evaluating the model over test portion (and dev poertion) of dataset, run:
 <br /> <code> python3 training/test.py $DDIR $MDIR $RDIR</code>
-The arguments are data nad model and results folder respectivly. default values can be:
+The arguments are data nad model and results folder respectively. Default values can be:
 <code>DDIR = data/monuments_600</code>
 <code>MDIR = output/models</code>
 <code>RDIR = results/result</code>
@@ -62,8 +63,8 @@ then select test_fairsec option. the result will be in the corresponding folder.
 - [`main.py`](/main.py): Python script for training the models.
 - [`experiment1.py`](/experiment1.py): Python script to run the experiment on the synthetic data, mentionned in section 4.2. of the report.
 - [`experiment2.py`](/experiment2.py): Python script to run the experiment on the real-world data from ..., mentionned in section 4.4. of the report.
-- [`report/`](/report/): folder for project report PDF `Final_report-My_Awesome_Readme.pdf`.
-- [`presentations/`](/presentations/): folder containing all the intermediate presentations as PDF (must be updated before each presentation session). Each file is labled using the template `[date]-Presentation_[presentation number]-My_Awesome_Readme.pdf`. *This template is my personal preference. You can use your own, as long as it is clear from the name which presentation corresponds to which file.*
+- [`report/`](/report/): folder for project report PDF.
+- [`presentations/`](/presentations/): folder containing all the intermediate presentations as PDF. 
 - [`results/`](/results/): folder containing all the results generated during the project.
     - [`results/models/`](/results/models/): folder containing the models trained during the project.
     - [`results/plots/`](/results/plots/): folder containing the plots describing the performance and the experiments.
