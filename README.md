@@ -1,4 +1,4 @@
-# LingNLQ project
+# TriviaNLQ project
 
 The current repository contains the data, code and results of the LingNLQ project.
 It was realised by Karolin Boczoń, Dimitra Niaouri, Roham Roshanfekr and Muhammad Shahzaib for the 2022-2023 Software Project (UE905 EC1) at IDMC (Nancy), under the supervision of Miguel Couceiro and Esteban Marquer.
@@ -17,22 +17,21 @@ This project was designed and tested using Python 3.10.
 To setup the project, you have to:
 1. clone the repository;
 2. [install the Python dependencies](#python-dependencies);
-3. [download the datasets](#).
+3. [download the datasets](#dataset).
 
 ### Python dependencies
 - Install requirements:
-<br /> <code> pip3 install -r requirements.txt </code>
+<br /> <code> pip3 install -r code/requirements.txt </code>
+
  
 
 ### Dataset
 - Download the dataset from the following link:
 
-    [LC-Quad dataset](https://drive.google.com/file/d/1ZNTZnE-rmH7OTuRTCqPR18wKTPGD3PQO/view?usp=sharing)
+    [Monument dataset](https://drive.google.com/file/d/1ZNTZnE-rmH7OTuRTCqPR18wKTPGD3PQO/view?usp=sharing)
 
-- Save it in a directory e.g. data/LC-QUAD
-
-    [Original link to LC-QUAD v1](http://lc-quad.sda.tech/lcquad1.0.html)
-
+- Save it in the directory:
+    <br /> <code>data/monument_600 </code>
 
 
 ## Usage instructions
@@ -42,9 +41,9 @@ To setup the project, you have to:
 
    [Checkpoint for ConvS2S](https://drive.google.com/file/d/1wirMkFL_rKcjMcAJoa75EkZkq8P49TW9/view?usp=sharing)
 
-- Save it in a directory e.g. output/models/
+- Save it in the directory output/models/
 - Run:
-<br /> <code> python3 main.py </code>
+<br /> <code> python3 code/main.py </code>
 
 
 ## Repository structure
