@@ -25,7 +25,7 @@ After the setup, the virtual environment will be activated so you can immediatel
 
 
 [Monument dataset](https://drive.google.com/file/d/15wo0HuLbAOkGgdY7zbwqppzfgiWeity9/view?usp=share_link)
-[LC-QUAD dataset](https://drive.google.com/file/d/1ZNTZnE-rmH7OTuRTCqPR18wKTPGD3PQO/view?usp=sharing)
+<br />[LC-QUAD dataset](https://drive.google.com/file/d/1ZNTZnE-rmH7OTuRTCqPR18wKTPGD3PQO/view?usp=sharing)
 
 
 ## Usage instructions
