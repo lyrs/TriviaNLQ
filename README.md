@@ -16,36 +16,22 @@ This project introduces TriviaNLQ, a web-application that utilizes text-to-SPARQ
 This project was designed and tested using Python 3.10.
 To setup the project, you have to:
 1. clone the repository;
-2. [install the Python dependencies](#python-dependencies);
-3. [download the datasets](#dataset).
+2. run `source build.sh`
 
-### Python dependencies
-- Install requirements:
-<br /> <code> pip3 install -r code/requirements.txt </code>
-
- 
+The script will create a virtual environment for this project and download datasets and models used.
+After the setup, the virtual environment will be activated so you can immediately use the system.
 
 ### Dataset
-- Download a dataset from the following link(s):
 
-  <br /> [Monument dataset](https://drive.google.com/file/d/15wo0HuLbAOkGgdY7zbwqppzfgiWeity9/view?usp=share_link)
-  <br /> [LC-QUAD dataset](https://drive.google.com/file/d/1ZNTZnE-rmH7OTuRTCqPR18wKTPGD3PQO/view?usp=sharing)
 
-- Save it in a directory:
-    <br /> <code>data/monument_600 </code>
-    <br /> <code>data/LC-QUAD </code>
+[Monument dataset](https://drive.google.com/file/d/15wo0HuLbAOkGgdY7zbwqppzfgiWeity9/view?usp=share_link)
+[LC-QUAD dataset](https://drive.google.com/file/d/1ZNTZnE-rmH7OTuRTCqPR18wKTPGD3PQO/view?usp=sharing)
 
 
 ## Usage instructions
 ### Basic usage
 ### Reproduce the experiments mentionned in the report
-- Download a checkpoint of the trained model ConvS2S from the following link: 
 
-   [ConvS2S model Checkpoint trained on Monument dataset ](https://drive.google.com/file/d/137_GiF1RlTDidF8psj7yg48soGzamV1N/view?usp=share_link)
-<br />   [ConvS2S model Checkpoint trained on LC-QUAD dataset ](https://drive.google.com/file/d/1wirMkFL_rKcjMcAJoa75EkZkq8P49TW9/view?usp=sharing)
-
-
-- Save it in the directory <code>output/models/</code> with the name <code>checkpoint_best.pt</code>
 - For having an experience on asking a question(in NL) and seeing the query(in SPARQL):
 <br /> <code> python3 code/main.py </code>
 - For evaluating the model over test portion (and dev poertion) of dataset, run:

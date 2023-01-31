@@ -3,4 +3,7 @@ numpy
 torch
 tqdm
 fairseq
-
+gdown
+flask
+flask_cors
+SPARQLWrapper
