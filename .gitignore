@@ -1,3 +1,5 @@
 .trivenv/
 data/
 models/
+
+*__pycache__*
