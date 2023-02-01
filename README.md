@@ -33,10 +33,10 @@ After the setup, the virtual environment will be activated so you can immediatel
 ### Reproduce the experiments mentionned in the report
 
 - For having an experience on asking a question(in NL) and seeing the query(in SPARQL):
-<br /> <code> python3 code/main.py </code>
+<br /> <code> python3 code/demo.py </code>
 - For evaluating the model over test portion (and dev poertion) of dataset, run:
-<br /> <code> python3 training/test.py $DDIR $MDIR $RDIR</code>
-The arguments are data nad model and results folder respectively. Default values can be:
+<br /> <code> python3 code/tntspa/test.py $DDIR $MDIR $RDIR</code>
+The arguments are data, model, and results folders respectively. Default values can be:
 <code>DDIR = data/monuments_600</code>
 <code>MDIR = output/models</code>
 <code>RDIR = results/result</code>
